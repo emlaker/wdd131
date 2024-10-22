@@ -36,6 +36,7 @@ section#books-desc {
 
 .book {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e0e0e0;
