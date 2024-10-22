@@ -1,0 +1,80 @@
+/* greenish blue: #4B5043; black: #090909; blue: #9BC4BC; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#title {
+    text-align: center;
+}
+
+nav {
+    font-family: 'Lora', impact, serif;
+    color: #9BC4BC;
+    text-align: right;
+    padding: 20px;
+    border: 5px solid #4B5043;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+section#books-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.description {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.book-title {
+    color: #9BC4BC;
+}
+
+#magyk {
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#magyk-desc {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#magnus {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#magnus-desc {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+aside#filter {
+    padding: 20px;
+    border-left: 2px solid #4B5043;
+}
