@@ -85,3 +85,7 @@ aside#filter {
 #filter-txt {
     color: #C33C54;
 }
+
+.date {
+    font-size: 1.1rem;
+}
