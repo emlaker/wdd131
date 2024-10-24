@@ -29,11 +29,17 @@ nav {
     grid-row: 1;
 }
 
-section#books-desc {
+
+#book-desk {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.each-book {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    gap: 10px;
 }
 
 .book {
@@ -44,20 +50,24 @@ section#books-desc {
     background-color: #C33C54;
     padding: 10px;
     border: 1px solid #ccc;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .description {
     background-color: #9BC4BC;
     padding: 10px;
     border: 1px solid #ccc;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
 }
 
 .book-title {
     color: #090909;
 }
 
-#magyk {
-
+/* #magyk {
     grid-column: 2;
     grid-row: 1;
 }
@@ -75,7 +85,7 @@ section#books-desc {
 #magnus-desc {
     grid-column: 1;
     grid-row: 2;
-}
+} */
 
 aside#filter {
     padding: 20px;
