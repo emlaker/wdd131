@@ -9,7 +9,7 @@ const articles = [
 		imgAlt: 'Book cover for Septimus Heap 1',
 		ages: '10-14',
 		genre: 'Fantasy',
-		stars: '****'
+		stars: '⭐⭐⭐⭐'
 	},
 	{
 		id: 2,
@@ -25,3 +25,31 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+const bookContainer = document.querySelector('#books-desc')
+console.log(bookContainer)
+
+function getBookTemplate(article) {
+	return `
+		<div class="each-book">
+			<div class="book">
+				<h2 class="book-title">${article.title}</h2>
+				<img src="${article.imgSrc}" alt="${article.imgAlt}">
+				<p>${article.description}</p>
+			</div>
+			<div class="description">
+				<p class="date">${article.date}</p>
+				<p>${article.ages}</p>
+				<p>${article.genre}</p>
+				<p>${article.stars}</p>
+			</div>
+		</div>
+	`
+}
+
+articles.forEach(
+	article => {
+		const articleGenerator = getBookTemplate(article)
+		bookContainer.insertAdjacentHTML("afterbegin", articleGenerator);
+	}
+)
