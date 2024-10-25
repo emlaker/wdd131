@@ -48,6 +48,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #C33C54;
+    color: white;
     padding: 10px;
     border: 1px solid #ccc;
     grid-column: 2;
@@ -64,7 +65,7 @@ nav {
 }
 
 .book-title {
-    color: #090909;
+    color: #ffffff;
 }
 
 /* #magyk {
