@@ -176,8 +176,54 @@ button:hover {
     background: #00b33c;
 }
 
+.checkout-summary {
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.checkout-summary h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-details {
+    margin: 20px 0;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.total-amount {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.total-amount strong {
+    color: #2c3e50;
+}
+
+.confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.confirmation-message p {
+    margin: 10px 0;
+}
+
 @media (max-width: 568px) {
     .columns div {
         width: 100%;
     }
+}
+
+@media (min-width: 569px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
