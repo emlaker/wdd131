@@ -30,17 +30,15 @@ function generateRecipeHTML(recipe) {
 }
 
 
-function generateTags() {
-    /**
- * Generate the following where tags are generic:
- * 
- * Do a for loop, looping over the recipe tags and append it to a string and return the string
- * 
- * <div>
- *  <span>tag1</span>
- *  <span>tag1</span>
- * </div>
- */
+function generateTags(tags) {
+//  * Do a for loop, looping over the recipe tags and append it to a string and return the string
+    let html = '<div class=tags>'    
+
+    for (let tag in tags){
+        html += `<div =class="tags">${tags}</div>`
+    }
+    
+    html += '</div>'
 }
 
 function displayRecipes(recipes) {
@@ -55,15 +53,62 @@ function randomNumber(total_recipes) {
     return Math.floor(Math.random()*total_recipes) // will give a number 0-4
 }
 
-/**
- * On the form element, add an event listener for submit, make sure it prevents default.
- * 
- * This is where you'll filter the list based on the users search query. (use toLowerCase())
- * 
- * Sort it by name
- * 
- * Then return the entire list, return only one recipe using that random number
- */
+
+// working on below
+// 
+
+const form = document.querySelector('form')
+
+form.addEventListener('submit', searchHandler);
+
+const input = document.querySelector('input')
+
+// Filters and sorts recipes
+function filter(query) {
+    const filtered = recipes.filter(recipe => filterFunction(recipe, query));
+    const sorted = filtered.sort(sortFunction);
+        return sorted;
+}
+
+// Filter function to match query
+function filterFunction(recipe, query) {
+    // Check if recipe name or description includes the query
+    const lowerCaseQuery = query.toLowerCase();
+    return (
+        recipe.name.toLowerCase().includes(lowerCaseQuery) ||
+        recipe.description.toLowerCase().includes(lowerCaseQuery)
+    );
+}
+
+// Sort function to sort by name alphabetically
+function sortFunction(a, b) {
+    return a.name.localeCompare(b.name);
+}
+
+function searchHandler(e) {
+	e.preventDefault()
+
+    // Get the search query
+    const query = input.value.trim().toLowerCase();
+
+    // Filter and sort recipes
+    const filteredRecipes = filter(query);
+
+    // Display the filtered recipe or handle no matches
+    if (filteredRecipes.length > 0) {
+        console.log('Recipe Found:', filteredRecipes[0]);
+        displayRecipes(filteredRecipes)
+    } 
+    else {
+        console.log('No recipe matches your search.');
+    }
+}
+
+
+// Working on above
+// 
+
+
 
 // Initialize
 displayRecipes(recipes);
