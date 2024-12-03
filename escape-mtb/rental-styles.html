@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentals and Styles</title>
     <link type="text/css" rel="stylesheet" href="styles/escape-styles.css">
+    <script src="rental-styles.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -14,36 +15,33 @@
             </a>
             <div class="index-nav">    
                 <nav>
-                <a href="index.html" class="index-nav">Home</a>
-                <a href="community.html" class="com-nav">Community Page</a>
-                <a href="rental-styles.html" class="rent-nav">MTB Rentals and Styles</a>
+                    <a href="index.html" class="index-nav">Home</a>
+                    <a href="community.html" class="com-nav">Community Page</a>
+                    <a href="rental-styles.html" class="rent-nav">MTB Rentals and Styles</a>
                 </nav>
             </div>
         </header>
-
-
-        <!-- This is me trying a new slide show component for the page that might work a little better and look a little cooler -->
 
             <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/hardtail-rental.jpg" alt="Hard Tail Bike" style="width:100%">
-            <div class="text">Hard Tail</div>
+                <div class="numbertext">1 / 3</div>
+                    <img src="images/hardtail-rental.jpg" alt="Hard Tail Bike" style="width:100%">
+                <div class="text">Hard Tail</div>
             </div>
         
             <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/fullsuspension-rental.jpg" alt="Full Suspenion Bike" style="width:100%">
-            <div class="text">Full Suspension Bike</div>
+                <div class="numbertext">2 / 3</div>
+                    <img src="images/fullsuspension-rental.jpg" alt="Full Suspenion Bike" style="width:100%">
+                <div class="text">Full Suspension Bike</div>
             </div>
         
             <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/diskbrakes-rental.jpg" alt="Disk Brakes" style="width:100%">
-            <div class="text">Disk Brakes</div>
+                <div class="numbertext">3 / 3</div>
+                    <img src="images/diskbrakes-rental.jpg" alt="Disk Brakes" style="width:100%">
+                <div class="text">Disk Brakes</div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -103,36 +101,6 @@
                 </a>
             </div>
         </footer>
-        <script>
-                    let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-        </script>
     </div>
 </body>
 </html>
