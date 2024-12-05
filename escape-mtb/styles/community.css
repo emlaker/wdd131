@@ -95,57 +95,69 @@ body {
     margin: 0 auto;
 }
 
-/* hero image */ 
 
 
+/* Community Page CSS */
 
-#hero {
+
+.community-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
 }
 
-#hero-box {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    z-index: -1;
-}
-
-#hero-img {
+.community-grid img {
     width: 100%;
 }
 
-#hero-msg {
-    grid-column: 2/3;
+.fam-pic {
+    grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 100px;
 }
 
-#hero-msg h1 {
-    margin: 0 auto;
-    color: white;
-    background-color: #13293d;
-    width: 200px;
-    padding: 20px;
+.comm-para {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 2;
+    font-size: large;
+}
+
+.couple-pic {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.trio-pic {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.group-pic {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.comm-msg {
     text-align: center;
 }
 
-.home-para {
-    margin: 0 auto;
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-top: 20px;
+.comm-facebook {
+    width: 100px;
+    display: block;
+    margin: 0 auto; 
 }
 
-.double {
-    line-height: 2;
+p {
+    font-size: large;
 }
 
 
 
 /* Footer CSS */ 
-
-
 
 footer {
     background-color: #3e92cc;
