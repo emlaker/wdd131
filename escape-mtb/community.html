@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Page</title>
     <link type="text/css" rel="stylesheet" href="styles/community.css">
+    <script src="community.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -21,18 +22,33 @@
             </div>
         </header>
         <div class="community-grid">
-        <img class="fam-pic" src="images/mtb-fam.jpg" alt="Mountain Biking with Family">
-        <p class="comm-para">
-            Growing up a lot of my friends didn't like to mountain bike, and in a place like Las Vegas I didn't blame them. I usually just went with my family, but I also wish that there was a place I could turn to for friends that shared my passion. Finding fellow mountain bikers can be tough which is why I decided to make this community page! This is a place where people can chat about the latest trails they've gone on, or ask for advice on trails they would like to go on. Below is a link to the community Facebook page where everyone can go to connect. Make sure that you are kind and respectful to others in your posts and comments.
-        </p>
-        <img class="couple-pic" src="images/community-pic1.jpg" alt="A Couple Mountain Biking">
-        <img class="trio-pic" src="images/community-pic2.jpg" alt="Three Friends Mountain Biking">
-        <img class="group-pic" src="images/community-pic3.jpg" alt="Group Mountain Biking">
+            <img class="fam-pic" src="images/mtb-fam.jpg" alt="Mountain Biking with Family">
+            <p class="comm-para">
+                Growing up a lot of my friends didn't like to mountain bike, and in a place like Las Vegas I didn't blame them. I usually just went with my family, but I also wish that there was a place I could turn to for friends that shared my passion. Finding fellow mountain bikers can be tough which is why I decided to make this community page! This is a place where people can chat about the latest trails they've gone on, or ask for advice on trails they would like to go on. Below is a link to the community Facebook page where everyone can go to connect. Make sure that you are kind and respectful to others in your posts and comments.
+            </p>
+            <img class="couple-pic" src="images/community-pic1.jpg" alt="A Couple Mountain Biking">
+            <img class="trio-pic" src="images/community-pic2.jpg" alt="Three Friends Mountain Biking">
+            <img class="group-pic" src="images/community-pic3.jpg" alt="Group Mountain Biking">
         </div>
         <a href="https://facebook.com" target="_blank">
             <img class="comm-facebook" src="images/facebook.png" alt="fb icon">
         </a>
         <h4 class="comm-msg">Click Here to Join the Community Page!</h4>
+
+        <div id="comment-section">
+            <h1>Comment Section</h1>
+            <form id="dynamicForm">
+                <label for="userInput">What's on your mind:</label>
+                <input type="text" id="userInput" name="userInput" required>
+                <button type="submit">Add to Page</button>
+            </form>
+            <div id="output">
+                <h2>Posts:</h2>
+                <ul id="textList"></ul>
+            </div>
+        </div>
+        
+
         <footer>
             <p>Escape MTB &copy; 2023 - Ethan Mlaker</p>
             <p><a class ="siteplan-footer" href="site-plan.html">Site Plan</a></p>

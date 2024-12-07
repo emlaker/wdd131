@@ -95,10 +95,9 @@ body {
     margin: 0 auto;
 }
 
-
-
-/* Community Page CSS */
-
+#comment-section {
+    text-align: center;
+}
 
 .community-grid {
     display: grid;
@@ -154,6 +153,31 @@ body {
 p {
     font-size: large;
 }
+
+/* The submit form */
+
+#container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#output {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Submit form above */
 
 
 

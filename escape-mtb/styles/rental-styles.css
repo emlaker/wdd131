@@ -84,7 +84,6 @@ nav a:hover {
     align-self: center;
 }
 
-
 body {
     margin: 0;
     padding: 0 ;
@@ -103,17 +102,23 @@ body {
     font-size: 14px;
 }
 
+/* Card */
+
+#form-container {
+    padding: 15px;
+}
+
 #card-back {
     top: 40px;
     right: 0;
     z-index: -2;
 }
 
-#card-btn {
-    background-color: whitesmoke;
-    color: black;
+#submitButton {
+    background-color: #13293d;
+    color: white;
     position: absolute;
-    bottom: -55px;
+    bottom: -45px;
     right: 0;
     width: 150px;
     border-radius: 8px;
@@ -128,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-#card-btn:hover {
+#submitButton:hover {
     background-color: lightgray;
 }
 
@@ -217,7 +222,7 @@ body {
     width: 500px;
     height: 290px;
     position: relative;
-    
+
 }
 
 #exp-container {
@@ -243,6 +248,12 @@ body {
     right: 0;
     top: 0;
 }
+
+/* Check out summary */
+.checkout-summary {
+    text-align: center;
+}
+
 
 input {
     border: 1px solid #000;
